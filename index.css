@@ -1,0 +1,190 @@
+.mainWidget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 2.5rem;
+}
+.Card:hover {
+  cursor: pointer;
+  box-shadow: transparent 0px 54px 55px, rgba(0, 0, 0, 0.17) 0px -12px 30px,
+    transparent 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.NotActive {
+  display: none;
+}
+.LogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.LogoContainer:hover {
+  cursor: pointer;
+}
+.Logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59px;
+  height: 59px;
+  padding: 10px;
+  border: 0.0625rem solid #eaeaea;
+}
+
+.Image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CardBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+}
+.Card {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 17.6rem;
+  border: 0.0625rem solid #eaeaea;
+}
+.Card button {
+  height: 32px;
+  width: 90%;
+  color: rgb(35, 76, 154) !important;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: rgb(35, 76, 154) !important;
+  border-radius: 15px !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.Card button:hover {
+  background-color: rgb(0, 0, 255, 0.3);
+}
+.Card div {
+  display: grid;
+  justify-items: left;
+  align-items: flex-start;
+}
+.CardImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 130px;
+  max-height: 130px;
+}
+.popup {
+  display: none;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 300px;
+  height: 50px;
+  background-color: black;
+  border-radius: 5px;
+}
+.open-popup {
+  display: flex;
+}
+
+.PopupText {
+  display: grid;
+  margin-left: 15px;
+  gap: 0.4rem;
+  color: white;
+}
+.PopupFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.Text {
+  font-size: 14px;
+  color: cadetblue;
+  cursor: pointer;
+}
+.CloseIcon {
+  position: absolute;
+  right: 1rem;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.CheckIcon {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.Card p {
+  display: flex;
+  justify-content: left;
+  font-size: 1rem;
+  width: 80%;
+}
+@media screen and (max-width: 1024px) {
+  .mainWidget {
+    display: grid;
+  }
+  .LogoContainer {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Logo {
+    border: none;
+  }
+  .Image {
+    display: none;
+  }
+  .Card {
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .CardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .LogoContainer {
+    overflow-x: scroll;
+    padding-left: 190px;
+  }
+  .popup {
+    position: relative;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .popup {
+    position: relative;
+    left: 1.5rem;
+  }
+  .LogoContainer {
+    padding-left: 250px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .popup {
+    position: relative;
+    left: 0;
+  }
+  .LogoContainer {
+    padding-left: 210px;
+  }
+  .Logo {
+    width: 50px;
+    height: 50px;
+  }
+}

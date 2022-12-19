@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>E-Commerce Widget</title>
+  </head>
+  <body>
+    <section>
+      <div class="mainWidget">
+        <div id="Logo" class="LogoContainer">
+          <img id="NikeLogo" onmousemove="changeNike()" class="Logo" />
+          <img id="AdidasLogo" onmousemove="changeAdidas()" class="Logo" />
+          <img id="VansLogo" onmousemove="changeVans()" class="Logo" />
+          <img id="PumaLogo" onmousemove="changePuma()" class="Logo" />
+          <img id="JordanLogo" onmousemove="changeJordan()" class="Logo" />
+          <img id="SkechersLogo" onmousemove="changeSkechers()" class="Logo" />
+          <img id="AsicsLogo" onmousemove="changeAsics()" class="Logo" />
+        </div>
+        <div class="Image">
+          <img id="brandImage" />
+          <img class="NotActive" id="brandImageAdidas" />
+          <img class="NotActive" id="brandImageVans" />
+          <img class="NotActive" id="brandImagePuma" />
+          <img class="NotActive" id="brandImageJordan" />
+          <img class="NotActive" id="brandImageSkechers" />
+          <img class="NotActive" id="brandImageAsics" />
+        </div>
+        <div class="CardBox" id="ProductsNike"></div>
+        <div class="NotActive" id="ProductsAdidas"></div>
+        <div class="NotActive" id="ProductsVans"></div>
+        <div class="NotActive" id="ProductsPuma"></div>
+        <div class="NotActive" id="ProductsJordan"></div>
+        <div class="NotActive" id="ProductsSkechers"></div>
+        <div class="NotActive" id="ProductsAsics"></div>
+      </div>
+      <div class="popup" id="popup">
+        <img src="./Asset/checkIcon.png" class="CheckIcon" />
+        <div class="PopupFlex">
+          <div class="PopupText">
+            <p id="ProductsName">Ürün sepete eklendi.</p>
+            <p class="Text">Sepete Git</p>
+          </div>
+          <div>
+            <img
+              class="CloseIcon"
+              src="./Asset/closeIcon.png"
+              onclick="closePopup()"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./JS/Product.js"></script>
+</html>
